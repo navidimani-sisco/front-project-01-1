@@ -1,0 +1,18 @@
+body{
+    direction: rtl;
+    text-align: right;
+    padding: 8px;
+}
+:root{
+    --primary: #6750A4;
+    --on-primary: #FFFFFF;
+    --on-surface: #1c1b1f;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}

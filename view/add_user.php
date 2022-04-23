@@ -21,6 +21,14 @@
             <label for="password">کلمه عبور</label>
             <input type="password" name="password" id="password">
         </div>
+        <div>
+            جنسیت: <br>
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label for="male">مرد</label>
+            <br>
+            <input type="radio" name="gender" id="female" value = "female">
+            <label for="female">زن</label>
+        </div>
         <button type="submit" name = "submit">ثبت نام</button>
     </form>
 </body>

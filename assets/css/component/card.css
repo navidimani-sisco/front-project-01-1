@@ -1,0 +1,17 @@
+.card{
+    border-radius: 12px;
+    overflow: hidden;
+}
+.card.outlined{
+    border: 1px solid black;
+}
+.card.filled{
+    background-color: aquamarine;
+}
+.card-body{
+    padding: 16px;
+}
+.card-title{}
+.card-img-top{
+    width: 100%;
+}

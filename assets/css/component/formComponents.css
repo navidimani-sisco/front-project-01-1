@@ -1,0 +1,6 @@
+@import url('button.css');
+@import url('textbox.css');
+*{
+    accent-color: var(--primary);
+    caret-color: var(--primary);
+}

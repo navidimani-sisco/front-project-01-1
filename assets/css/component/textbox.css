@@ -1,0 +1,33 @@
+.form-control{
+    border: 1px solid black;
+    padding: 16px;
+    font-size: 24px;
+    /* --height: 40px;
+    height: var(--height);
+    border-radius: calc( var(--height) / 2 );
+    margin: max(8px, calc(48px - var(--height))) 0px 0px 16px;
+    padding: 0 24px;
+    line-height: calc(var(--height) - 4px);
+    vertical-align: middle;
+
+    text-align: center;
+    /* min-width: 300px; */
+    /* font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.1em;
+	border: 2px solid transparent;
+
+    display: inline-block;
+    align-items: normal;
+    text-decoration: none;
+    cursor: pointer; */
+}
+.form-control input{
+    border: none;
+    line-height: 24px;
+}
+.form-control i{
+    margin: 0 -4px 0 8px;
+}

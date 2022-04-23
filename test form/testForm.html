@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/e36ff0bc6c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/7s2t5gm60bjkqdwd59bxof77zg6fiwdhh4y0t1palohu6jny/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+	<script>
+        tinymce.init({
+          selector: 'textarea#editor',
+          plugins: 'directionality image',
+          language: 'fa',
+          toolbar: 'ltr rtl |'
+
+        });
+    </script>
+</head>
+<body>
+    <form action="test.php" method="get">
+        <div>
+            <input type="text" name="name" id="">
+        </div>
+        <div>
+            جنسیت: <br>
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label for="male">مرد</label>
+            <br>
+            <input type="radio" name="gender" id="female" value = "female">
+            <label for="female">زن</label>
+        </div>
+        <div>
+            <input type="checkbox" name="spice[]" id="pepper" value = "pepper" checked>
+            <label for="pepper">فلفل</label>
+            <input type="checkbox" name="spice[]" id="salt" value = "salt">
+            <label for="salt">نمک</label>
+            <input type="checkbox" name="spice[]" id="thymes" value = "thymes">
+            <label for="thymes">آویشن</label>
+        </div>
+        <div>
+            <label for="drink">نوشیدنی</label>
+            <select name="drink[]" id="drink" multiple>
+                <option value="coke">کوکاکولا</option>
+                <option value="canada" selected>کانادادرای</option>
+                <option value="sprite">اسپرایت</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" list="city">
+            <datalist id="city">
+                <option value="esfahan">اصفهان</option>
+                <option value="shiraz">شیراز</option>
+                <option value="abadan">آبادان</option>
+            </datalist>
+
+        </div>
+        <div>
+            <textarea id="editor" name="description"></textarea>
+        </div>
+
+        <button type="submit" class="btn primary">
+            <i class="fa-solid fa-heart-pulse"></i>
+            ارسال
+        </button>
+        <a href="" class="btn primary">
+            <i class="fa-solid fa-heart-pulse"></i>
+            ارسال
+        </a>
+        <br>
+        <button type="submit" class="btn primary">
+            ارسال
+        </button>
+        <br>
+        <button type="submit" class="btn primary" disabled>
+            <i class="fa-solid fa-heart-pulse"></i>
+            ارسال
+        </button>
+        <a href="" class="btn primary disabled">
+            <i class="fa-solid fa-heart-pulse"></i>
+            ارسال
+        </a>
+    </form>
+	
+    <a href="login.php" class="">
+		text
+	</a>
+	<a href="../register.php" class="">
+		text
+	</a>
+</body>
+</html>

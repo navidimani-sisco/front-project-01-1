@@ -1,17 +1,17 @@
 <?php
     include 'settings.php';
+    include 'lib/db.php';
 
 
 if( isset( $_POST['submit'] ) ){ // اگر از فرم آمده
     // a. validate data
     // b. عملیات درج
     // 1. connect db
-    $dbc = new mysqli( $dbHost, $dbUser, $dbPass, $dbName);
-    $dbc -> set_charset('utf8_mb4');
+    $dbc = new DB( $dbHost, $dbUser, $dbPass, $dbName, $dbCharset);
     // 2. create query
-    $sql = "INSERT INTO user(fullname, username, password) VALUES('{$_POST['fullname']}', '{$_POST['username']}', '{$_POST['password']}')";
+    $sql = "INSERT INTO user(fullname, username, password, gender) VALUES(?, ?, ?, ?)";
     // 3. execute query
-    $result = $dbc -> query( $sql );
+    $result = $dbc -> query( $sql, $_POST['fullname'], $_POST['username'], $_POST['password'] , $_POST['gender'] );
     // 4. close connection
     $dbc -> close();
 
